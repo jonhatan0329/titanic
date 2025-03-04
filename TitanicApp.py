@@ -35,7 +35,7 @@ if st.button("Predict Survival"):
     prediction = model.predict(input_data_scaled)[0]
     if prediction == 1:
         st.success("Survived! 🎉")
-        st.image("https://media.giphy.com/media/l2JehQ2GitHGdVG9y/giphy.gif", use_column_width=True)
+        st.image("https://media.giphy.com/media/l2JehQ2GitHGdVG9y/giphy.gif", use_container_width=True)
     else:
         st.error("Did not survive 😢")
-        st.image("https://media.giphy.com/media/3o6Zt6KHxJTbXCnEic/giphy.gif", use_column_width=True)
+        st.image("https://media.giphy.com/media/3o6Zt6KHxJTbXCnEic/giphy.gif", use_container_width=True)
